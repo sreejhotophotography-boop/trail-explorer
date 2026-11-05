@@ -528,7 +528,7 @@ function VenueSection() {
         <div className="venue-map ceremonial-reveal">
           <iframe
             title="Map showing Sri Sai Baba Kalyana Mandapam, Bethamcherla"
-            src="https://www.google.com/maps?q=Sri+Sai+Baba+Kalyana+Mandapam,+Bethamcherla,+Andhra+Pradesh+518599&output=embed"
+            src="https://www.google.com/maps?q=F565%2BH3J+Shirdi+sai+convention+hall,+Bethamcherla+-+Kurnool+Rd,+Betamcherla,+Andhra+Pradesh+518599&ftid=0x3bb4331550fc39b7:0x29c497ddffab946e&output=embed"
             width="100%"
             height="320"
             loading="lazy"
