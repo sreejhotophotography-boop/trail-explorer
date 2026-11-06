@@ -133,6 +133,13 @@ button, input, textarea, select { font: inherit; }
 
 .wedding-hero--revealed .hero-date { animation: soft-rise .75s 1.1s ease-out forwards; }
 
+.hero-ornament {
+  display: block;
+  width: min(100%, 21.5rem);
+  height: auto;
+  margin: .45rem auto -.15rem;
+}
+
 .hero-venue {
   position: relative;
   margin: .9rem 0 0;
@@ -140,18 +147,6 @@ button, input, textarea, select { font: inherit; }
   font: 400 clamp(.8rem, 3.2vw, .95rem)/1.6 "Cormorant Garamond", serif;
   color: var(--maroon);
   opacity: 0;
-}
-
-.hero-venue::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2.125rem;
-  height: 1px;
-  background: var(--gold);
-  opacity: .7;
-  transform: translateX(-50%);
 }
 
 .wedding-hero--revealed .hero-venue { animation: soft-rise .75s 1.26s ease-out forwards; }
@@ -653,11 +648,6 @@ button, input, textarea, select { font: inherit; }
 @keyframes branding-rise { to { opacity: 1; transform: translateY(0); } }
 
 @media (max-width: 680px) {
-  .hero-content { top: 15%; width: min(calc(100% - 1.75rem), 35rem); }
-  .hero-date { margin-top: .55rem; }
-  .hero-venue { margin-top: .55rem; padding-top: .7rem; }
-  .hero-location { font-size: .66rem; letter-spacing: .03em; line-height: 1.4; }
-  .hero-scroll { margin-top: .85rem; }
   .countdown-cells { top: 42%; left: 16.5%; right: 16.6%; height: 35.7%; gap: 11.7%; }
   .countdown-value { font-size: clamp(.9rem, 5.2cqw, 2rem); }
   .muhurtham-section { min-height: 52rem; padding: 6.5rem 1.25rem 18rem; }
