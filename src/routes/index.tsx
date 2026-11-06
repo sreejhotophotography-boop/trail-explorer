@@ -3,6 +3,7 @@ import { CalendarDays, ChevronDown, Clock3, Instagram, MapPin, Music, Phone, Sha
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import heroOrnament from "@/assets/hero-gold-ornament.png.asset.json";
 
 const ASSETS = "/assets";
 const entryCard = `${ASSETS}/entry-card.jpg`;
@@ -27,6 +28,7 @@ const coupleMomentsUrls = [
   `${ASSETS}/couple-moments-3.webp`,
 ];
 const musicUrl = "/Kalyanam_Vibhogam.mp3";
+const heroOrnamentUrl = heroOrnament.url;
 
 const WEDDING_DATE = new Date("2026-11-26T09:31:00+05:30");
 
@@ -222,6 +224,7 @@ function WeddingHero() {
           <p className="hero-ampersand">&</p>
           <p className="hero-name">{splitName("Surya Teja")}</p>
           <p className="hero-date">Thursday, November 26, 2026</p>
+          <img className="hero-ornament" src={heroOrnamentUrl} alt="" aria-hidden="true" />
           <p className="hero-venue">
             <span className="hero-at">at</span>{" "}
             <span className="hero-location">Sri Sai Baba Kalyana Mandapam, Bethamcherla</span>
